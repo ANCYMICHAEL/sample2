@@ -8,15 +8,25 @@
 4. Configure your GitHub account:
 
 ```bash
-git config --global user.name "username"
-git config --global user.email "emailid"
+git config --global user.name "Your Username"
+git config --global user.email "your_email@example.com"
 ```
+## Basic Git Commands
 
-These commands connect your Git commits with your GitHub account.
+
+| Command                   | Description                                                      |
+| ------------------------- | ---------------------------------------------------------------- |
+| `git status`              | Shows the current status of files (modified, staged, untracked). |
+| `git init`                | Creates a new Git repository in the current folder.              |
+| `git add filename`        | Adds a specific file to the staging area.                        |
+| `git add .`               | Adds all files to the staging area.                              |
+| `git commit -m "message"` | Saves a snapshot of staged changes with a message.               |
+| `git checkout commit_id`  | Moves to a specific commit (detached HEAD state).                |
+| `git switch -`            | Switches back to the previous branch.                            |
+| `git checkout master`     | Switches to the master/main branch.                              |
 
 ---
 
-## Basic Git Commands
 
 ### 1. git status
 
@@ -82,6 +92,17 @@ git checkout master
 
 ## Branch Management
 
+# Branch Commands
+
+| Command            | Description                               |
+| ------------------ | ----------------------------------------- |
+| `git branch`       | Lists all branches.                       |
+| `git branch dev`   | Creates a new branch named `dev`.         |
+| `git checkout dev` | Switches to the `dev` branch.             |
+| `git switch dev`   | Modern way to switch to the `dev` branch. |
+
+---
+
 ### 7. git branch
 
 Displays all available branches.
@@ -127,17 +148,25 @@ git push origin main
 ```
 
 ---
+# GitHub Commands
+
+| Command                | Description                                               |
+| ---------------------- | --------------------------------------------------------- |
+| `git clone URL`        | Downloads an existing GitHub repository to your computer. |
+| `git push origin main` | Uploads local commits to GitHub.                          |
+| `git pull origin main` | Downloads and merges the latest changes from GitHub.      |
+
+---
+
 
 ## GitHub Concepts
 
 ### 12. Fork
 
-Creates a personal copy of another user's GitHub repository.
-
+A **Fork** creates your own copy of someone else's GitHub repository under your GitHub account.
 ### 13. Pull Request (PR)
 
-A request to merge your changes into another branch or repository after review.
-
+A **Pull Request** is a request to merge your changes into another branch or repository after review.
 ---
 
 # Git Workflow Stages
@@ -146,15 +175,16 @@ Working Directory
 ↓
 git add
 ↓
-Staging Area
+Staging Area/Edit Files
 ↓
-git commit
+git commit -m "message"
 ↓
 Local Repository
 ↓
 git push
 ↓
 GitHub Remote Repository
+
 
 Description:
 
